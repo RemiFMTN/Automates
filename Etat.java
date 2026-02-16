@@ -1,7 +1,6 @@
 public class Etat {
 
     String nomEtat;
-    TypeEtat typeEtat;
     Boolean Access=false;
     Boolean Co_Access=false;
 
@@ -21,14 +20,6 @@ public class Etat {
 		nomEtat = NomEtat;
 	}
 
-	public TypeEtat GetTypeEtat(){
-		return typeEtat;
-	}
-
-	public void SetTypeEtat(TypeEtat TypeEtat){
-		typeEtat = TypeEtat;
-	}
-
 	public Boolean getCo_Access() {
 		return Co_Access;
 	}
@@ -37,16 +28,11 @@ public class Etat {
 		Co_Access = co_Access;
 	}
 
-	public Etat(String nomEtat, TypeEtat typeEtat) {
+	public Etat(String nomEtat) {
         this.nomEtat = nomEtat;
-        this.typeEtat = typeEtat;
     }
-	//khorsi : Empty Arguments Constructor
+
 	public Etat() {
 
     }
-	//Khorsi : Set Type Etat
-	public void SetType(TypeEtat typeEtat) {
-		this.typeEtat= typeEtat;
-	}
 }

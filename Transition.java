@@ -27,7 +27,18 @@ public class Transition {
     Etat get_e_final (){
         return this.e_final;
     }
+    @SuppressWarnings("unused")
     String get_symbole (){
         return this.symbole;
+    }
+
+    // Vérifie si la transition accepte le symbole lu
+    boolean accepte(char symboleLu) {
+        for (char c : symbole.toCharArray()) {
+            if (c == symboleLu && c != '|' && c != ',') { // ignore éventuels séparateurs
+                return true;
+            }
+        }
+        return false;
     }
 }
