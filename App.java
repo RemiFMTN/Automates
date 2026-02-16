@@ -24,12 +24,12 @@ public class App {
         // Test de l'appartenance d'un mot à l'automate
         System.out.println("Automate : " + automate.nom);
 
-        String mot1 = "abc";
-        boolean appartient = automate.appartient(mot1);
-        System.out.println("Le mot '" + mot1 + "' appartient a l'automate : " + appartient);
+        //String mot1 = "abc";
+        //boolean appartient = automate.appartient(mot1);
+        //System.out.println("Le mot '" + mot1 + "' appartient a l'automate : " + appartient);
 
-        String mot2 = "ab";
-        appartient = automate.appartient(mot2);
-        System.out.println("Le mot '" + mot2 + "' appartient a l'automate : " + appartient);
+        //String mot2 = "ab";
+        //appartient = automate.appartient(mot2);
+        //System.out.println("Le mot '" + mot2 + "' appartient a l'automate : " + appartient);
     }
 }

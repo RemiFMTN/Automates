@@ -1,5 +1,5 @@
 public class Etat {
-	
+
     String nomEtat;
     TypeEtat typeEtat;
     Boolean Access=false;
@@ -11,6 +11,22 @@ public class Etat {
 
 	public void setAccess(Boolean access) {
 		Access = access;
+	}
+
+	public String GetNomEtat(){
+		return nomEtat;
+	}
+
+	public void SetNomEtat(String NomEtat){
+		nomEtat = NomEtat;
+	}
+
+	public TypeEtat GetTypeEtat(){
+		return typeEtat;
+	}
+
+	public void SetTypeEtat(TypeEtat TypeEtat){
+		typeEtat = TypeEtat;
 	}
 
 	public Boolean getCo_Access() {
