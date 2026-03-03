@@ -27,7 +27,6 @@ public class Transition {
     Etat get_e_final (){
         return this.e_final;
     }
-    @SuppressWarnings("unused")
     String get_symbole (){
         return this.symbole;
     }
