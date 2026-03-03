@@ -15,7 +15,7 @@ public class Automate {
     }
 
     public static final Set<Character> ALPHABET = 
-        new HashSet<>(Arrays.asList('1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ':', 'a', 'b', 'c')); // alphabet
+        new HashSet<>(Arrays.asList('1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ':', 'a', 'b', 'c', 'd', 'v', 'S', 's', 'L', 'l')); // alphabet
 
     public boolean appartient(String mot) {
 
