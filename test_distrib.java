@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 
-// Test
-
 public class test_distrib {
     public static void main(String[] args) {
 
@@ -14,11 +12,11 @@ public class test_distrib {
         Etat e50 = new Etat("e50");
 
         // États de dépassement
-        Etat e60 = new Etat("e60"); 
-        Etat e70 = new Etat("e70"); 
-        Etat e80 = new Etat("e80"); 
-        Etat e90 = new Etat("e90"); 
-        Etat e100 = new Etat("e100"); 
+        Etat e60 = new Etat("e60");
+        Etat e70 = new Etat("e70");
+        Etat e80 = new Etat("e80");
+        Etat e90 = new Etat("e90");
+        Etat e100 = new Etat("e100");
 
         // États de rendu intermédiaire
         Etat srendu10 = new Etat("srendu10");
@@ -161,36 +159,50 @@ public class test_distrib {
         appartient = automate.appartient(mot6);
         System.out.println("Le mot '" + mot6 + "' appartient a l'automate : " + appartient + '\n');
 
-        // Autres Tests
+        /*
+         * // Autres Tests
+         * 
+         * // Mot accepté : 50c -> café long direct
+         * String mot7 = "5Ll";
+         * appartient = automate.appartient(mot7);
+         * System.out.println("Le mot '" + mot7 + "' appartient a l'automate : " +
+         * appartient + '\n');
+         * 
+         * // Mot accepté : 20c + 20c + 10c -> café long
+         * String mot8 = "221Ll";
+         * appartient = automate.appartient(mot8);
+         * System.out.println("Le mot '" + mot8 + "' appartient a l'automate : " +
+         * appartient + '\n');
+         * 
+         * // Mot refusé : bouton avant paiement suffisant
+         * String mot9 = "1Ss";
+         * appartient = automate.appartient(mot9);
+         * System.out.println("Le mot '" + mot9 + "' appartient a l'automate : " +
+         * appartient + '\n');
+         * 
+         * // Mot refusé : rendu de monnaie sans raison
+         * String mot10 = "v2Ss";
+         * appartient = automate.appartient(mot10);
+         * System.out.println("Le mot '" + mot10 + "' appartient a l'automate : " +
+         * appartient + '\n');
+         * 
+         * // Mot refusé : distribution sans commande
+         * String mot11 = "12s";
+         * appartient = automate.appartient(mot11);
+         * System.out.println("Le mot '" + mot11 + "' appartient a l'automate : " +
+         * appartient + '\n');
+         * 
+         * // Mot refusé : rendu après distribution
+         * String mot12 = "12Ssd";
+         * appartient = automate.appartient(mot12);
+         * System.out.println("Le mot '" + mot12 + "' appartient a l'automate : " +
+         * appartient + '\n');
+         */
 
-        // Mot accepté : 50c -> café long direct
-        String mot7 = "5Ll";
-        appartient = automate.appartient(mot7);
-        System.out.println("Le mot '" + mot7 + "' appartient a l'automate : " + appartient + '\n');
+        // Dernier Tests : appartient pas
+        String mot13 = "SLLSSLSLS1S1Ss";
+        appartient = automate.appartient(mot13);
+        System.out.println("Le mot '" + mot13 + "' appartient a l'automate : " + appartient + '\n');
 
-        // Mot accepté : 20c + 20c + 10c -> café long
-        String mot8 = "221Ll";
-        appartient = automate.appartient(mot8);
-        System.out.println("Le mot '" + mot8 + "' appartient a l'automate : " + appartient + '\n');
-
-        // Mot refusé : bouton avant paiement suffisant
-        String mot9 = "1Ss";
-        appartient = automate.appartient(mot9);
-        System.out.println("Le mot '" + mot9 + "' appartient a l'automate : " + appartient + '\n');
-
-        // Mot refusé : rendu de monnaie sans raison
-        String mot10 = "v2Ss";
-        appartient = automate.appartient(mot10);
-        System.out.println("Le mot '" + mot10 + "' appartient a l'automate : " + appartient + '\n');
-
-        // Mot refusé : distribution sans commande
-        String mot11 = "12s";
-        appartient = automate.appartient(mot11);
-        System.out.println("Le mot '" + mot11 + "' appartient a l'automate : " + appartient + '\n');
-
-        // Mot refusé : rendu après distribution
-        String mot12 = "12Ssd";
-        appartient = automate.appartient(mot12);
-        System.out.println("Le mot '" + mot12 + "' appartient a l'automate : " + appartient + '\n');
     }
 }
